@@ -1,190 +1,207 @@
-<!DOCTYPE HTML>
-<!--
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 -->
-<html>
-	<head>
-		<title>ARBOL DE VIDA Centro Cultural</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
+<html xmlns="http://www.arboldevida.comxhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.slidertron-1.1.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Narrow:400,700" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body>
+<style media="screen">
+form {
+/* Centrar el formulario en la página */
+margin: 0 auto;
+width: 800px;
+/* Esquema del formulario */
+padding: 1em;
+border: 5px solid #13B76C;
+border-radius: 1em;
+}
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">ARBOL DE VIDA <span>CENTRO CULTURAL</span></a></div>
-				<a href="#menu">Menu</a>
-			</header>
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
+form li + li {
+margin-top: 1em;
+}
+
+label {
+/* Tamaño y alineación uniforme */
+display: inline-block;
+width: 90px;
+text-align: center;
+}
+
+input,
+textarea {
+/* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+	 Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+font: 1em sans-serif;
+font-size: 50px;
+
+/* Tamaño uniforme del campo de texto */
+width: 300px;
+box-sizing: border-box;
+
+/* Hacer coincidir los bordes del campo del formulario */
+border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+/* Destacado adicional para elementos que tienen el cursor */
+border-color: #F9E79F;
+}
+
+textarea {
+/* Alinear los campos de texto multilínea con sus etiquetas */
+vertical-align: top;
+
+/* Proporcionar espacio para escribir texto */
+height: 5em;
+}
+
+.button {
+/* Alinear los botones con los campos de texto */
+padding-left: 120px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+button {
+/* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+	 entre las etiquetas y sus campos de texto */
+margin-left: 1.2em;
+}
+</style>
+
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">Arbol de vida Centro Cultural</a></h1>
+			<p>Lorem ipsum veroeros</p>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="first active"><a href="#" accesskey="1" title="">Inicio</a></li>
+				<li><a href="#" accesskey="2" title="">Nuestro Proyecto</a></li>
+				<li><a href="#" accesskey="3" title="">De donde venimos</a></li>
+				<li><a href="" accesskey="4" title="">Los talleres</a></li>
+				<li><a href="#" accesskey="5" title="">Contáctenos</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="banner">
+	<div id="slider">
+		<div class="viewer">
+			<div class="reel">
+				<div class="slide">
+					<h2>Un encuentro con los sonidos.</h2>
+					<p>De aquello que queremos.</p>
+					<a class="link" href="#">Full story ...</a> <img src="images/pic01.jpg" alt="" /> </div>
+				<div class="slide">
+					<h2>Un viaje al mundo de la musica.</h2>
+					<p>Aquello que nos apasiona.</p>
+					<a class="link" href="#">Full story ...</a> <img src="images/pic02.jpg" alt="" /> </div>
+				<div class="slide">
+					<h2>Un espacio para el encuentro.</h2>
+					<p>Con los que tanto disfrutamos compartir.</p>
+					<a class="link" href="#">Full story ...</a> <img src="images/pic03.jpg" alt="" /> </div>
+			</div>
+		</div>
+		<div class="indicator">
+			<ul>
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('#slider').slidertron({
+			viewerSelector: '.viewer',
+			reelSelector: '.viewer .reel',
+			slidesSelector: '.viewer .reel .slide',
+			advanceDelay: 3000,
+			speed: 'slow',
+			navPreviousSelector: '.previous-button',
+			navNextSelector: '.next-button',
+			indicatorSelector: '.indicator ul li',
+			slideLinkSelector: '.link'
+		});
+	</script>
+</div>
+<div id="wrapper">
+	<div id="featured" class="container">
+		<h2 class="title">Los talleres</h2>
+		<div id="fbox1"> <img src="images/pic04.jpg" width="235" height="235" alt="" />
+			<h2>teclados</h2>
+			<p>Piano - Organo - Teclado eléctrico.</p>
+		</div>
+		<div id="fbox2"> <img src="images/pic05.jpg" width="235" height="235" alt="" />
+			<h2>cuerdas</h2>
+			<p>Violín - Viola - Violoncello - Contrabajo.</p>
+		</div>
+		<div id="fbox3"> <img src="images/pic06.jpg" width="235" height="235" alt="" />
+			<h2>Percusión</h2>
+			<p>Tambores - Cajón - Bombo.</p>
+		</div>
+		<div id="fbox4"> <img src="images/pic07.jpg" width="235" height="235" alt="" />
+			<h2>Melódicos</h2>
+			<p>Suspendisse sit amet tellus eros bibendum volutpat nulla.</p>
+		</div>
+	</div>
+	<div id="page" class="container">
+		<div id="content">
+			<img src="images/pic08.jpg" width="235" height="235" alt="" />
+			<h2>Nulla luctus eleifend</h2>
+			<p>This is <strong>Universality</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.   The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :)</p>
+		</div>
+		<div id="sidebar">
+			<div>
+				<h2>Categories</h2>
+				<ul class="style1">
+					<li class="first">
+						<p><a href="#">Ipsum ante vivamus semper faucibus varius. Nam risus nibh, commodo vulputate.</a></p>
+						<span class="posted">8 hours ago</span> </li>
+					<li>
+						<p><a href="#">Sed amet consequat lorem ipsum dolor sit amet blandit feugiat lorem ipsum sed ante nibh.</a></p>
+						<span class="posted">1 day ago</span> </li>
 				</ul>
-			</nav>
+			</div>
+		</div>
+	</div>
+</div>
 
-		<!-- Banner -->
-			<section class="banner full">
-				<article>
-					<img src="images/slide01.jpg" alt="" />
-					<div class="inner">
-						<header>
-							<p>A free responsive web site template by <a href="https://templated.co">TEMPLATED</a></p>
-							<h2>ARBOL DE VIDA</h2>
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/slide02.jpg" alt="" />
-					<div class="inner">
-						<header>
-							<p>Un espacio para compartir músicas, silencios y sonidos</p>
-							<h2>Nuestro espacio, tu espacio</h2>
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/slide03.jpg"  alt="" />
-					<div class="inner">
-						<header>
-							<p>Un espacio para compartir músicas, silencios y sonidos</p>
-							<h2>Nuestro espacio, tu espacio</h2>
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/slide04.jpg"  alt="" />
-					<div class="inner">
-						<header>
-							<p>Adipiscing lorem ipsum feugiat sed phasellus consequat</p>
-							<h2>Etiam feugiat</h2>
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/slide05.jpg"  alt="" />
-					<div class="inner">
-						<header>
-							<p>Ipsum dolor sed magna veroeros lorem ipsum</p>
-							<h2>Lorem adipiscing</h2>
-						</header>
-					</div>
-				</article>
-			</section>
-
-		<!-- One -->
-			<section id="one" class="wrapper style2">
-				<div class="inner">
-					<div class="grid-style">
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic02.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<p>maecenas sapien feugiat ex purus</p>
-										<h2>Lorem ipsum dolor</h2>
-									</header>
-									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
-									<footer class="align-center">
-										<a href="#" class="button alt">Learn More</a>
-									</footer>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic03.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<p>mattis elementum sapien pretium tellus</p>
-										<h2>Vestibulum sit amet</h2>
-									</header>
-									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
-									<footer class="align-center">
-										<a href="#" class="button alt">Learn More</a>
-									</footer>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-						<h2>Morbi maximus justo</h2>
-					</header>
-				</div>
-			</section>
-
-		<!-- Three -->
-			<section id="three" class="wrapper style2">
-				<div class="inner">
-					<header class="align-center">
-						<p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-						<h2>Morbi maximus justo</h2>
-					</header>
-					<div class="gallery">
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic01.jpg" alt="" /></a>
-							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic02.jpg" alt="" /></a>
-							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic03.jpg" alt="" /></a>
-							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic04.jpg" alt="" /></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Untitled. All rights reserved.
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<form action="/my-handling-form-page" method="post">
+ <ul>
+  <li>
+    <label for="name">NOMBRE:</label>
+    <input type="text" id="name" name="user_name">
+  </li>
+  <li>
+    <label for="mail">CORREO ELECTRONICO:</label>
+    <input type="email" id="mail" name="user_mail">
+  </li>
+  <li>
+    <label for="msg">MENSAJE:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </li>
+ </ul>
+</form>
+<div id="footer">
+	<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+</div>
+</body>
 </html>
